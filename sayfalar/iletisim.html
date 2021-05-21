@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link rel="stylesheet" href="Css/style.css">
+    <title>Yeni Kayıt</title>
+</head>
+
+<body background="dosyalar/23364404.jpg">
+    <form action="" method="post" class="container" enctype="multipart/form-data">
+        <h1>Kayıt Ekle</h1>
+        <table class="table table-striped" style="margin-left:auto;margin-right:auto; text-align:center" >
+            <tr>
+                <td>TC</td>
+                <td><input type="text" name="tc" required></td>
+            </tr>
+            <tr>
+                <td>Ad</td>
+                <td><input type="text" name="ad" required></td>
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td><input type="text" name="soyad" required></td>
+            </tr>
+            <tr>
+               <td>
+                <label for="cars">Cinsiyet:</label>
+               </td>
+               <td>
+                <select id="Cinsiyet">
+                  <option value="erkek">Erkek</option>
+                  <option value="kadın">Kadın</option>
+                </select>
+               </td>
+            <tr>
+                <td>Mail</td>
+                <td><input type="text" name="mail" required></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet</td>
+                <td><input type="text" name="cins" required></td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihi</td>
+                <td><input type="date" name="dtarih" required></td>
+            </tr>
+            <tr>
+                <td>Adres</td>
+                <td><input type="text" name="adres" required></td>
+            </tr>
+            <tr>
+                <td>Mesaj</td>
+                <td><input type="text" name="mesaj" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" class="btn btn-primary" value="Kayıt Ekle" name="kayitekle"></td>
+            </tr>
+        </table>
+    </form>
+</body>
