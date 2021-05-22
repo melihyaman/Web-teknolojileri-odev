@@ -30,3 +30,15 @@
     </div>
 </body>
 </html>
+
+<?php
+$kullaniciadi = "admin";
+$sifre = "12345";
+if (isset($_POST['kullaniciadi'])) {
+    if ($_POST['kullaniciadi'] == $kullaniciadi && $_POST['sifre'] == $sifre && $_POST['captcha'] == true) {
+        header("Location:Veritabani.php");
+    } else {
+        echo "<script type='text/javascript'>alert('Hatalı kullanıcı adı/şifre');</script>";
+    }
+}
+?>
