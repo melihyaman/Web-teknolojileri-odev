@@ -47,7 +47,7 @@
 
 <?php
 $kullaniciadi = "b201210072@sakarya.edu.tr";
-$sifre = "";
+$sifre = "b201210072";
 if (isset($_POST['kullaniciadi'])) {
     if ($_POST['kullaniciadi'] == $kullaniciadi && $_POST['sifre'] == $sifre) {
         header("Location:ana-sayfa.html");
