@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-6 offset-3">
-                <form method="post">
+            <form method="post">
                     <div class="form-group">
                         <label for="kullaniciadi">Kullanıcı Adı</label>
-                        <input type="text" class="form-control" id="userId" name="kullaniciadi" placeholder="Kullanıcı Adı">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="kullaniciadi" placeholder="Kullanıcı Adı">
                         
                     </div>
                     <div class="form-group">
@@ -46,8 +46,8 @@
 
 
 <?php
-$kullaniciadi = "admin";
-$sifre = "12345";
+$kullaniciadi = "b201210072@sakarya.edu.tr";
+$sifre = "";
 if (isset($_POST['kullaniciadi'])) {
     if ($_POST['kullaniciadi'] == $kullaniciadi && $_POST['sifre'] == $sifre) {
         header("Location:ana-sayfa.html");
